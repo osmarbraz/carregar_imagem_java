@@ -78,9 +78,11 @@ public class FrmImagem extends javax.swing.JFrame {
 
     private void jBtCarregarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtCarregarActionPerformed
         // TODO add your handling code here:
-        //ImageIcon imagem = new ImageIcon("imagem1.jpg");
+        //Caminho da imagem
         String localImagem = "/imagem1.jpg";
+        //Cria o objeto imagem
         ImageIcon imagem = new ImageIcon(getClass().getResource(localImagem));
+        //Coloca a imagem no JLabel.
         jLbImagem.setIcon(imagem);
     }//GEN-LAST:event_jBtCarregarActionPerformed
 
