@@ -12,6 +12,7 @@
     </properties>
                        
     <build>
+        <!-- Recursos da aplicação -->
         <resources>
             <resource>
                 <directory>src/main/resources</directory>
@@ -20,8 +21,10 @@
                 </includes>
             </resource>
         </resources>
-    
+        
+        <!-- Plugins do Maven -->
         <plugins>
+             <!-- Configura o programa principal do projeto -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
@@ -36,12 +39,5 @@
             </plugin>           
         </plugins>        
     </build>
-    <name>carregar_imagem_java</name>
-    <dependencies>
-        <dependency>
-            <groupId>org.netbeans.external</groupId>
-            <artifactId>AbsoluteLayout</artifactId>
-            <version>RELEASE130</version>
-        </dependency>
-    </dependencies>
+    <name>carregar_imagem_java</name>   
 </project>
