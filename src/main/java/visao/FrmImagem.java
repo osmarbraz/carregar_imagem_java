@@ -24,13 +24,17 @@ public class FrmImagem extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLbImagem = new javax.swing.JLabel();
+        jLbImagem2 = new javax.swing.JLabel();
         jBtCarregar = new javax.swing.JButton();
         jBtFechar = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        JLbImagem1 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Exemplo de carregamento de imagem");
 
-        jLbImagem.setText("Imagem");
+        jLbImagem2.setText("Imagem2");
 
         jBtCarregar.setText("Carregar imagem");
         jBtCarregar.addActionListener(new java.awt.event.ActionListener() {
@@ -46,31 +50,49 @@ public class FrmImagem extends javax.swing.JFrame {
             }
         });
 
+        jLabel1.setText("Imagem pré-carregada");
+
+        JLbImagem1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem1.jpg"))); // NOI18N
+        JLbImagem1.setText("Imagem1");
+
+        jLabel4.setText("Imagem carregada em execução");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(15, 15, 15)
-                .addComponent(jLbImagem, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(188, Short.MAX_VALUE))
+                .addGap(6, 6, 6)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel1)
+                    .addComponent(JLbImagem1, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel4)
+                    .addComponent(jLbImagem2, javax.swing.GroupLayout.PREFERRED_SIZE, 217, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jBtCarregar)))
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jBtCarregar)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jBtFechar)
-                .addGap(63, 63, 63))
+                .addGap(200, 200, 200)
+                .addComponent(jBtFechar))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(25, 25, 25)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jBtCarregar)
-                    .addComponent(jBtFechar))
-                .addGap(18, 18, 18)
-                .addComponent(jLbImagem, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(113, Short.MAX_VALUE))
+                .addGap(6, 6, 6)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(JLbImagem1, javax.swing.GroupLayout.PREFERRED_SIZE, 205, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(8, 8, 8)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel1)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel4)
+                                .addGap(6, 6, 6)
+                                .addComponent(jLbImagem2, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(6, 6, 6)
+                                .addComponent(jBtCarregar)))))
+                .addGap(9, 9, 9)
+                .addComponent(jBtFechar))
         );
 
         pack();
@@ -83,7 +105,7 @@ public class FrmImagem extends javax.swing.JFrame {
         //Cria o objeto imagem
         ImageIcon imagem = new ImageIcon(getClass().getResource(localImagem));
         //Coloca a imagem no JLabel.
-        jLbImagem.setIcon(imagem);
+        jLbImagem2.setIcon(imagem);
     }//GEN-LAST:event_jBtCarregarActionPerformed
 
     private void jBtFecharActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtFecharActionPerformed
@@ -92,8 +114,11 @@ public class FrmImagem extends javax.swing.JFrame {
     }//GEN-LAST:event_jBtFecharActionPerformed
   
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel JLbImagem1;
     private javax.swing.JButton jBtCarregar;
     private javax.swing.JButton jBtFechar;
-    private javax.swing.JLabel jLbImagem;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLbImagem2;
     // End of variables declaration//GEN-END:variables
 }

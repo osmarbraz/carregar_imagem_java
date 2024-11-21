@@ -1,6 +1,8 @@
 # Carregamento de imagem em Java
 
-A imagen está no diretório /src/main/resources.
+Esta aplicação apresenta como carregar imagens de forma estática e dinâmica.
+
+Todas as imagens está no diretório /src/main/resources.
 
 O pom.xml foi configurado para incluir a pasta resources no jar.
 
